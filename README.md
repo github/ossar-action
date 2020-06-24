@@ -46,7 +46,7 @@ steps:
 
 ## Upload Results to the Security tab
 
-To upload results to the Security tab of your repo, run the `github/codeql-action/upload-sarif` action immediately after running MSCA. MSCA sets the action output variable `sarifFile` to the path of a single SARIF file that can be uploaded to this API.
+To upload results to the Security tab of your repo, run the `github/codeql-action/upload-sarif` action immediately after running OSSAR. OSSAR sets the action output variable `sarifFile` to the path of a single SARIF file that can be uploaded to this API.
 
 ```yaml
 - name: Upload results to Security tab
