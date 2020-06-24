@@ -65,7 +65,7 @@ To upload results to the Security tab of your repo, run the `github/codeql-actio
 
 # More Information
 
-Please see the [wiki tab](https://github.com/github/ossar-action/wiki) for more information and the [Frequently Asked Questions (FAQ)](https://github.com/github/ossar-action/wiki/FAQ).
+Please see the [wiki tab](https://github.com/github/ossar-action/wiki) for more information and the [Frequently Asked Questions (FAQ)](https://github.com/github/ossar-action/wiki/FAQ) page.
 
 # Report Issues
 
