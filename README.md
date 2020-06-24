@@ -55,6 +55,22 @@ To upload results to the Security tab of your repo, run the `github/codeql-actio
     sarif_file: ${{ steps.ossar.outputs.sarifFile }}
 ```
 
+# Open Source Tools
+
+| Name | Language |
+| --- | --- |
+| [Bandit](https://github.com/PyCQA/bandit) | python |
+| [BinSkim](https://github.com/Microsoft/binskim) | binaries - Windows, ELF |
+| [ESlint](https://github.com/eslint/eslint) | JavaScript |
+
+# More Information
+
+Please see our [wiki tab](https://github.com/github/ossar-action/wiki) for more information and the [Frequently Asked Questions (FAQ)](https://github.com/github/ossar-action/wiki/FAQ).
+
+# Report Issues
+
+Please [file a GitHub issue](https://github.com/github/ossar-action/issues/new) in this repo. To help us investigate the issue, please include a description of the problem, a link to your workflow run (if public), and/or logs from the MSCA's action output.
+
 # License
 
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
