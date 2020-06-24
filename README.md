@@ -8,12 +8,12 @@ Run multiple open source security static analysis tools without the added comple
 This action runs the [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) for security analysis by:
 
 * Installing the Microsoft Security Code Analysis CLI
-* Installing the latest Microsoft security policy
-* Installing the latest Microsoft and 3rd party security tools
-* Automatic or user-provided configuration of security tools
-* Execution of a full suite of security tools
+* Installing the latest policy or referencing the local `policy/github.gdnpolicy` file
+* Installing the latest open source tools
+* Automatic or user-provided configuration of static analysis tools
+* Execution of a full suite of static analysis tools
 * Normalized processing of results into the SARIF format
-* Build breaks and more
+* Exports a single SARIF file which can be uploaded via the `github/codeql-action/upload-sarif` action
 
 # Usage
 
