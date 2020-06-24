@@ -1,5 +1,9 @@
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.1 BLOCK -->
 
+If you discover a security issue in this repo, please submit it through the [GitHub Security Bug Bounty](https://hackerone.com/github)
+
+Thanks for helping make GitHub Actions safe for everyone.
+
 ## Security
 
 Microsoft takes the security of our software products and services seriously, which includes all source code repositories managed through our GitHub organizations, which include [Microsoft](https://github.com/Microsoft), [Azure](https://github.com/Azure), [DotNet](https://github.com/dotnet), [AspNet](https://github.com/aspnet), [Xamarin](https://github.com/xamarin), and [many more](https://opensource.microsoft.com/).

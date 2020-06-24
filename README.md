@@ -5,6 +5,12 @@
 
 Run multiple open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner).
 
+# Limitations
+
+The OSSAR action is currently in beta and runs on the `windows-latest` queue, as well as Windows self hosted agents. `ubuntu-latest` support coming soon.
+
+# Overview
+
 This action runs the [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) for security analysis by:
 
 * Installing the Microsoft Security Code Analysis CLI
