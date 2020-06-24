@@ -60,7 +60,7 @@ To upload results to the Security tab of your repo, run the `github/codeql-actio
 | Name | Language |
 | --- | --- |
 | [Bandit](https://github.com/PyCQA/bandit) | python |
-| [BinSkim](https://github.com/Microsoft/binskim) | binaries - Windows, ELF |
+| [BinSkim](https://github.com/Microsoft/binskim) | binary - Windows, ELF |
 | [ESlint](https://github.com/eslint/eslint) | JavaScript |
 
 # More Information
