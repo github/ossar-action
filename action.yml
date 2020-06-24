@@ -1,0 +1,17 @@
+name: 'ossar-action'
+description: 'Run multiple open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner)'
+author: 'GitHub'
+branding:
+  icon: 'shield'
+  color: 'black'
+inputs:
+  config:
+    description: A file path to a .gdnconfig file.
+  policy:
+    description: The name of the well known policy to use. If empty, defaults to the policy/github.gdnpolicy file in the action repo.
+outputs:
+  sarifFile:
+    description: A file path to a SARIF results file.
+runs:
+  using: 'node12'
+  main: 'lib/action.js'
