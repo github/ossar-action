@@ -1,4 +1,4 @@
-# actions/ossar
+# github/ossar-action
 
 ![OSSAR windows-latest](https://github.com/microsoft/security-code-analysis-action/workflows/OSSAR%20windows-latest/badge.svg)  
 ![OSSAR ubuntu-latest](https://github.com/microsoft/security-code-analysis-action/workflows/OSSAR%20ubuntu-latest/badge.svg)
