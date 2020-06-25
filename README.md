@@ -3,7 +3,7 @@
 ![OSSAR windows-latest](https://github.com/github/ossar-action/workflows/OSSAR%20windows-latest/badge.svg)  
 ![OSSAR ubuntu-latest](https://github.com/github/ossar-action/workflows/OSSAR%20ubuntu-latest/badge.svg)
 
-Run multiple open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner).
+Run open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner).
 
 # Limitations
 
