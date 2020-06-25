@@ -1,5 +1,5 @@
 name: 'ossar-action'
-description: 'Run multiple open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner)'
+description: 'Run open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner)'
 author: 'GitHub'
 branding:
   icon: 'shield'
