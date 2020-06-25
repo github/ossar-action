@@ -36,7 +36,7 @@ steps:
   with:
     dotnet-version: '3.1.201'
 - name: Run OSSAR
-  uses: github/ossar-action@master
+  uses: github/ossar-action@v1
   id: ossar
 - name: Upload results to Security tab
   uses: github/codeql-action/upload-sarif@v1
