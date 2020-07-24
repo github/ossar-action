@@ -7,7 +7,7 @@ import * as exec from '@actions/exec';
 export class MscaInstaller {
 
     async install(cliVersion: string) {
-        console.log('Installing Microsot Security Code Analysis Cli...');
+        console.log('Installing Microsoft Security Code Analysis Cli...');
 
         if (process.env.MSCA_FILEPATH) {
             console.log(`MSCA Cli File Path overriden by %MSCA_FILEPATH%: ${process.env.MSCA_FILEPATH}`);
