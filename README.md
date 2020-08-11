@@ -34,7 +34,7 @@ steps:
 - uses: actions/checkout@v2
 - uses: actions/setup-dotnet@v1
   with:
-    dotnet-version: '3.1.201'
+    dotnet-version: '3.1'
 - name: Run OSSAR
   uses: github/ossar-action@v1
   id: ossar
