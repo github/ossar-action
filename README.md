@@ -32,9 +32,6 @@ Run OSSAR with the default policy and recommended tools.
 ```yaml
 steps:
 - uses: actions/checkout@v2
-- uses: actions/setup-dotnet@v1
-  with:
-    dotnet-version: '3.1.201'
 - name: Run OSSAR
   uses: github/ossar-action@v1
   id: ossar
@@ -42,6 +39,14 @@ steps:
   uses: github/codeql-action/upload-sarif@v1
   with:
     sarif_file: ${{ steps.ossar.outputs.sarifFile }}
+```
+
+**Note:** The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201. A version greater than or equal to v3.1.201 of dotnet must be installed on the agent in order to run this action. Remote agents already have a compatible version of dotnet installed. To ensure a compatible version of dotnet is installed on your desktop agent, please configure the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) action.
+
+```
+- uses: actions/setup-dotnet@v1
+  with:
+    dotnet-version: '3.1.x'
 ```
 
 ## Upload Results to the Security tab
