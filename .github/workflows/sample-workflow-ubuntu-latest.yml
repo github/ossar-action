@@ -20,10 +20,14 @@ jobs:
       # Checkout your code repository to scan
     - uses: actions/checkout@v2
 
-      # Install dotnet, used by OSSAR
-    - uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.201'
+    # Ensure a compatible version of dotnet is installed.
+    # The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201.
+    # A version greater than or equal to v3.1.201 of dotnet must be installed on the agent in order to run this action.
+    # Remote agents already have a compatible version of dotnet installed and this step may be skipped.
+    # For local agents, ensure dotnet version 3.1.201 or later is installed by including this action:
+    # - uses: actions/setup-dotnet@v1
+    #   with:
+    #     dotnet-version: '3.1.x'
 
       # Run open source static analysis tools
     - name: Run OSSAR
