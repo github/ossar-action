@@ -41,7 +41,7 @@ steps:
     sarif_file: ${{ steps.ossar.outputs.sarifFile }}
 ```
 
-**Note:** The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201. A version greater than or equal to v3.1.201 of dotnet must be installed on the agent in order to run this action. Remote agents already have a compatible version of dotnet installed. To ensure a compatible version of dotnet is installed on your desktop agent, please configure the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) action.
+**Note:** The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201. A version greater than or equal to v3.1.201 of dotnet must be installed on the runner in order to run this action. GitHub hosted runners already have a compatible version of dotnet installed. To ensure a compatible version of dotnet is installed on a self-hosted runner, please configure the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) action.
 
 ```
 - uses: actions/setup-dotnet@v1
