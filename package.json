@@ -1,6 +1,6 @@
 {
     "name": "ossar-action",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Node dependencies for the OSSAR Action.",
     "scripts": {
         "test": "mocha"
