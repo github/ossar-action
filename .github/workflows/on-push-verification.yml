@@ -28,7 +28,7 @@ jobs:
 
       # Run open source static analysis tools
     - name: Run OSSAR
-      uses: github/ossar-action@master
+      uses: ./action.yml
       id: ossar
 
       # Upload results to the Security tab
