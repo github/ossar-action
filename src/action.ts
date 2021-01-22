@@ -126,9 +126,9 @@ var gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
-    console.log(data);
+    core.info(data);
     data = fs.readFileSync(gdnConfigFilePath, 'utf8');
-    console.log(data);
+    core.info(data);
 }
 catch(err)
 {
