@@ -9,7 +9,7 @@
 
     <PropertyGroup Label="TypeScript">
         <TypeScriptCompileBlocked Condition=" '$(TypeScriptCompileBlocked)' == '' ">false</TypeScriptCompileBlocked>
-        <TypeScriptToolsVersion Condition=" '$(TypeScriptToolsVersion)' == '' ">3.8</TypeScriptToolsVersion>
+        <TypeScriptToolsVersion Condition=" '$(TypeScriptToolsVersion)' == '' ">4.1</TypeScriptToolsVersion>
         <TypeScriptConfigFileName Condition=" '$(TypeScriptConfigFileName)' == '' ">tsconfig.json</TypeScriptConfigFileName>
         <TypeScriptConfigFilePath>$(MSBuildProjectDirectory)/$(TypeScriptConfigFileName)</TypeScriptConfigFilePath>
         <TscYieldDuringToolExecution>false</TscYieldDuringToolExecution>
