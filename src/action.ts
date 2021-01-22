@@ -4,8 +4,6 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as os from 'os';
 
-let action = new MscaAction();
-
 let args: string[] = [];
 
 let analysisArgs = ""
@@ -145,6 +143,7 @@ core.debug(`policyFilePath = ${policyFilePath}`);
 args.push('--policy-file-path');
 args.push(policyFilePath);
 
+let action = new MscaAction();
 action.run(args);
 
 /*
