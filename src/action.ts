@@ -73,7 +73,7 @@ if (action.isNullOrWhiteSpace(projects)) {
     core.setFailed("'projects' must be non-empty");
 }
 
-var buildCommandLines:string;
+var buildCommandLines:string = "";
 var first = true;
 projects.split(";").forEach(function (project) {
     if (!first)
@@ -125,7 +125,7 @@ try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
     data = fs.readFileSync(gdnConfigFilePath, 'utf8');
-    core.info(data);
+    core.info(JSON.parse(data));
 }
 catch(err)
 {
