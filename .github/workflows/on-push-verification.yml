@@ -6,7 +6,7 @@ on: push
 
 jobs:
   sample:
-    name: Open Source Static Analysis Runner
+    name: .NET Analyzers runner
 
     # .NET Analyzers runs on windows-latest.
     # ubuntu-latest and macos-latest supporting coming soon
