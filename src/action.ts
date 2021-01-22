@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as os from 'os';
 
-let args: string[] = [];
+let action = new MscaAction();
 
 let analysisArgs = ""
 
@@ -124,7 +124,6 @@ var gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
-    core.info(data);
     data = fs.readFileSync(gdnConfigFilePath, 'utf8');
     core.info(data);
 }
@@ -133,6 +132,7 @@ catch(err)
     throw Error(err);
 }
 
+let args: string[] = [];
 args.push('-c');
 args.push(gdnConfigFilePath);
 
@@ -143,7 +143,6 @@ core.debug(`policyFilePath = ${policyFilePath}`);
 args.push('--policy-file-path');
 args.push(policyFilePath);
 
-let action = new MscaAction();
 action.run(args);
 
 /*
