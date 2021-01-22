@@ -118,8 +118,11 @@ var configContent = {
     ]
 };
 
+const actionDirectory = path.resolve(__dirname);
+core.debug(`actionDirectory = ${actionDirectory}`);
+
 let data = JSON.stringify(configContent);
-var gdnConfigFilePath = path.join(os.tmpdir(), 'roslynanalyzers.gdnconfig');
+var gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
@@ -136,9 +139,6 @@ args.push('-c');
 args.push(gdnConfigFilePath);
 
 // Use the local policy file
-const actionDirectory = path.resolve(__dirname);
-core.debug(`actionDirectory = ${actionDirectory}`);
-
 const policyFilePath = path.resolve(path.join(actionDirectory, '../', 'policy', 'github.gdnpolicy'));
 core.debug(`policyFilePath = ${policyFilePath}`);
 
@@ -147,6 +147,7 @@ args.push(policyFilePath);
 
 action.run(args);
 
+/*
 try
 {
     fs.unlinkSync(gdnConfigFilePath);
@@ -155,3 +156,4 @@ catch(err)
 {
     console.error(err)
 }
+/*
