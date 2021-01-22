@@ -123,6 +123,9 @@ var gdnConfigFilePath = path.join(os.tmpdir(), 'roslynanalyzers.gdnconfig');
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
+    console.log(data);
+    data = fs.readFileSync(gdnConfigFilePath, 'utf8');
+    console.log(data);
 }
 catch(err)
 {

@@ -58,4 +58,4 @@ outputs:
     description: A file path to a SARIF file with analysis results.
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'lib/action.js'

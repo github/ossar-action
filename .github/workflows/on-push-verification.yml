@@ -30,3 +30,5 @@ jobs:
     - name: Run .NET Analyzers
       uses: ./
       id: dotnet-analyzers
+      with:
+        projects: ./samples/ClassLibrary1.sln
