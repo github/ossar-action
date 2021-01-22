@@ -32,4 +32,3 @@ jobs:
       id: dotnet-analyzers
       with:
         projects: ./samples/ClassLibrary1.sln
-        security: latest-recommended
