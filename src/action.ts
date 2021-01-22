@@ -120,12 +120,10 @@ const actionDirectory = path.resolve(__dirname);
 core.debug(`actionDirectory = ${actionDirectory}`);
 
 let data = JSON.stringify(configContent);
-var gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
+const gdnConfigFilePath = path.resolve(path.join(actionDirectory, 'roslynanalyzers.gdnconfig'));
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
-    data = fs.readFileSync(gdnConfigFilePath, 'utf8');
-    core.info(JSON.parse(data));
 }
 catch(err)
 {
@@ -145,7 +143,7 @@ args.push(policyFilePath);
 
 action.run(args);
 
-/*
+
 try
 {
     fs.unlinkSync(gdnConfigFilePath);
@@ -154,4 +152,3 @@ catch(err)
 {
     console.error(err)
 }
-*/
