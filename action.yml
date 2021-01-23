@@ -14,4 +14,5 @@ outputs:
     description: A file path to a SARIF results file.
 runs:
   using: 'node12'
+  
   main: 'lib/action.js'
