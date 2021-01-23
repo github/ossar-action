@@ -148,7 +148,7 @@ args.push(policyFilePath);
 
 action.run(args);
 
-
+/*
 try
 {
     fs.unlinkSync(gdnConfigFilePath);
@@ -157,3 +157,4 @@ catch(err)
 {
     console.error(err)
 }
+*/
