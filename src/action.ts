@@ -120,7 +120,11 @@ const actionDirectory = path.resolve(__dirname);
 core.debug(`actionDirectory = ${actionDirectory}`);
 
 let data = JSON.stringify(configContent);
-const gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
+core.info(data);
+
+let gdnConfigFilePath = path.join(actionDirectory, 'roslynanalyzers.gdnconfig');
+core.debug(`gdnConfigFilePath = ${gdnConfigFilePath}`);
+
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
