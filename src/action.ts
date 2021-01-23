@@ -127,7 +127,7 @@ core.debug(`gdnConfigFilePath = ${gdnConfigFilePath}`);
 try
 {
     fs.writeFileSync(gdnConfigFilePath, data);
-    data = fs.readFileSync(gdnConfigFilePath, "utf");
+    data = fs.readFileSync(gdnConfigFilePath, "utf8");
     core.info(data);
 }
 catch(err)
