@@ -70,7 +70,7 @@ The following table documents what tools are currently run by this action (if ap
 | [BinSkim](https://github.com/Microsoft/binskim) | binary - Windows, ELF |
 | [ESlint](https://github.com/eslint/eslint) | JavaScript |
 
-To request a tool be integrated, please file a [new a GitHub](https://github.com/github/ossar-action/issues/new) issue in this repo.
+To request a tool be integrated, please file a [new a GitHub issue](https://github.com/github/ossar-action/issues/new) in this repo.
 
 # More Information
 
