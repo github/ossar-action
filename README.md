@@ -62,7 +62,7 @@ To upload results to the Security tab of your repo, run the `github/codeql-actio
 
 # Open Source Tools
 
-The following table documents what tools are currently run by this build task (if applicable or configured) and the language(s) or artifact(s) they can analyze.
+The following table documents what tools are currently run by this action (if applicable or configured) and the language(s) or artifact(s) they can analyze.
 
 | Name | Analysis Coverage |
 | --- | --- |
