@@ -1,4 +1,5 @@
 {
+  "name": "GitHub",
   "rulesets": {
     "Microsoft": {
       "id": "Microsoft",
