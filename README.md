@@ -62,11 +62,15 @@ To upload results to the Security tab of your repo, run the `github/codeql-actio
 
 # Open Source Tools
 
-| Name | Language |
+The following table documents what tools are currently run by this build task (if applicable or configured) and the language(s) or artifact(s) they can analyze.
+
+| Name | Analysis Coverage |
 | --- | --- |
 | [Bandit](https://github.com/PyCQA/bandit) | python |
 | [BinSkim](https://github.com/Microsoft/binskim) | binary - Windows, ELF |
 | [ESlint](https://github.com/eslint/eslint) | JavaScript |
+
+To request a tool be integrated, please file a [new a GitHub](https://github.com/github/ossar-action/issues/new) issue in this repo.
 
 # More Information
 
