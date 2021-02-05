@@ -18,6 +18,18 @@ This action runs the [Code Analysis CLI](https://aka.ms/mscadocs) for .NET code 
 * Normalized processing of results into the SARIF format
 * Exports a single SARIF file which can be uploaded via the `github/codeql-action/upload-sarif` action
 
+# Open Source Tools
+
+The following table documents what tools are currently run by this action (if applicable or configured) and the language(s) or artifact(s) they can analyze.
+
+| Name | Analysis Coverage |
+| --- | --- |
+| [Bandit](https://github.com/PyCQA/bandit) | python |
+| [BinSkim](https://github.com/Microsoft/binskim) | binary - Windows, ELF |
+| [ESlint](https://github.com/eslint/eslint) | JavaScript |
+
+To request a tool be integrated, please file a [new a GitHub issue](https://github.com/github/ossar-action/issues/new) in this repo.
+
 # Usage
 
 See [action.yml](action.yml)
