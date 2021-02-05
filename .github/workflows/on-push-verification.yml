@@ -31,4 +31,4 @@ jobs:
       uses: ./
       id: dotnet-analyzers
       with:
-        projects: /github/workspace/samples/ClassLibrary1.sln
+        projects: .\samples\ClassLibrary1.sln
