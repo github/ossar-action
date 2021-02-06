@@ -1,23 +1,20 @@
-# github/ossar-action
+# github/dotnet-analyzers-action
 
-![OSSAR windows-latest](https://github.com/github/ossar-action/workflows/OSSAR%20windows-latest/badge.svg)  
-![OSSAR ubuntu-latest](https://github.com/github/ossar-action/workflows/OSSAR%20ubuntu-latest/badge.svg)
+![.NET Analyzers windows-latest](https://github.com/github/dotnet-analyzers-action/workflows/.NET%20Analyzers%20windows-latest/badge.svg)  
+![.NET Analyzers ubuntu-latest](https://github.com/github/dotnet-analyzers-action/workflows/.NET%20Analyzers%20ubuntu-latest/badge.svg)
 
-Run open source security static analysis tools without the added complexity with OSSAR (Open Source Static Analysis Runner).
+Run [.NET code quality and code style analyzers](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/overview) that ship with the .NET SDK.
 
 # Limitations
 
-The OSSAR action is currently in beta and runs on the `windows-latest` queue, as well as Windows self hosted agents. `ubuntu-latest` support coming soon.
+The .NET Analyzers action is currently in beta and runs on the `windows-latest` queue, as well as Windows self hosted agents. `ubuntu-latest` support coming soon.
 
 # Overview
 
-This action runs the [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) for security analysis by:
+This action runs the [Code Analysis CLI](https://aka.ms/mscadocs) for .NET code quality and code style analysis by:
 
-* Installing the Microsoft Security Code Analysis CLI
-* Installing the latest policy or referencing the local `policy/github.gdnpolicy` file
-* Installing the latest open source tools
-* Automatic or user-provided configuration of static analysis tools
-* Execution of a full suite of static analysis tools
+* Installing the Code Analysis CLI
+* Execution of [.NET code quality and code style analyzers](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/overview) that ship with the .NET SDK
 * Normalized processing of results into the SARIF format
 * Exports a single SARIF file which can be uploaded via the `github/codeql-action/upload-sarif` action
 
@@ -39,21 +36,17 @@ See [action.yml](action.yml)
 
 ## Basic
 
-Run OSSAR with the default policy and recommended tools.
+Run [.NET code quality and code style analyzers](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/overview) that ship with the .NET SDK.
 
 ```yaml
 steps:
 - uses: actions/checkout@v2
-- name: Run OSSAR
-  uses: github/ossar-action@v1
-  id: ossar
-- name: Upload results to Security tab
-  uses: github/codeql-action/upload-sarif@v1
-  with:
-    sarif_file: ${{ steps.ossar.outputs.sarifFile }}
+- name: Run .NET code quality and code style analyzers
+  uses: github/dotnet-analyzers-action@v1
+  id: dotnet-analyzers
 ```
 
-**Note:** The [Microsoft Security Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201. A version greater than or equal to v3.1.201 of dotnet must be installed on the runner in order to run this action. GitHub hosted runners already have a compatible version of dotnet installed. To ensure a compatible version of dotnet is installed on a self-hosted runner, please configure the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) action.
+**Note:** The [Microsoft Code Analysis CLI](https://aka.ms/mscadocs) is built with dotnet v3.1.201. A version greater than or equal to v3.1.201 of dotnet must be installed on the runner in order to run this action. GitHub hosted runners already have a compatible version of dotnet installed. To ensure a compatible version of dotnet is installed on a self-hosted runner, please configure the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) action.
 
 ```
 - uses: actions/setup-dotnet@v1
@@ -61,24 +54,13 @@ steps:
     dotnet-version: '3.1.x'
 ```
 
-## Upload Results to the Security tab
-
-To upload results to the Security tab of your repo, run the `github/codeql-action/upload-sarif` action immediately after running OSSAR. OSSAR sets the action output variable `sarifFile` to the path of a single SARIF file that can be uploaded to this API.
-
-```yaml
-- name: Upload results to Security tab
-  uses: github/codeql-action/upload-sarif@v1
-  with:
-    sarif_file: ${{ steps.ossar.outputs.sarifFile }}
-```
-
 # More Information
 
-Please see the [wiki tab](https://github.com/github/ossar-action/wiki) for more information and the [Frequently Asked Questions (FAQ)](https://github.com/github/ossar-action/wiki/FAQ) page.
+Please see the [wiki tab](https://github.com/github/dotnet-analyzers-action/wiki) for more information and the [Frequently Asked Questions (FAQ)](https://github.com/github/dotnet-analyzers-action/wiki/FAQ) page.
 
 # Report Issues
 
-Please [file a GitHub issue](https://github.com/github/ossar-action/issues/new) in this repo. To help us investigate the issue, please include a description of the problem, a link to your workflow run (if public), and/or logs from the OSSAR's action output.
+Please [file a GitHub issue](https://github.com/github/dotnet-analyzers-action/issues/new) in this repo. To help us investigate the issue, please include a description of the problem, a link to your workflow run (if public), and/or logs from the .NET Analyzers's action output.
 
 # License
 
