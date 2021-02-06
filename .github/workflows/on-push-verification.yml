@@ -12,11 +12,6 @@ jobs:
     # ubuntu-latest and macos-latest supporting coming soon
     runs-on: windows-latest
 
-    # default working directory to the current directory
-    defaults:
-      run:
-        working-directory: .
-
     steps:
 
       # Checkout your code repository to scan
