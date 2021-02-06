@@ -36,4 +36,4 @@ jobs:
       uses: ./
       id: dotnet-analyzers
       with:
-        projects: .\samples\ClassLibrary1.sln
+        projects: samples\ClassLibrary1.sln
