@@ -81,6 +81,13 @@ projects.split(";").forEach(function (project) {
         buildCommandLines += " ; ";
         first = false;
     }
+
+    if (!path.isAbsolute(project))
+    {
+        project = `$(Folders.SourceRepo)\\${project}`;
+
+    }
+
     buildCommandLines +=`msbuild.exe ${analysisArgs}${project}`;
 });
 
