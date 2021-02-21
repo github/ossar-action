@@ -22,7 +22,7 @@
     </Target>
 
     <Target Name="Build" DependsOnTargets="Clean;NpmInstall">
-        <Message Text="Compiling ossar-action." />
+        <Message Text="Compiling github/ossar-action." />
         <Exec Command="tsc" WorkingDirectory="$(RepoDirectory)" />
     </Target>
 
