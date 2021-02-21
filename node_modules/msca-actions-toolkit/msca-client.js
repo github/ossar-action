@@ -27,6 +27,7 @@ class MscaClient {
     }
     setupEnvironment() {
         return __awaiter(this, void 0, void 0, function* () {
+            process.env.DOTNET_NOLOGO = 'true';
             console.log('------------------------------------------------------------------------------');
             if (!process.env.MSCA_FILEPATH) {
                 let cliVersion = this.resolveCliVersion();
@@ -91,7 +92,7 @@ class MscaClient {
             catch (error) {
                 error('Exception occurred while initializing MSCA:');
                 error(error);
-                core.setFailed(error.Message);
+                core.setFailed(error);
                 return;
             }
             try {
@@ -100,7 +101,7 @@ class MscaClient {
             }
             catch (error) {
                 error(error);
-                core.setFailed(error.Message);
+                core.setFailed(error);
                 return;
             }
         });

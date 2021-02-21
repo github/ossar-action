@@ -1,6 +1,6 @@
 {
     "name": "msca-actions-toolkit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Microsoft Security Code Analysis for GitHub Actions toolkit.",
     "author": "Microsoft Corporation",
     "license": "MIT",
