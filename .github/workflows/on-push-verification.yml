@@ -1,5 +1,4 @@
-# sample-workflow-windows-latest
-# docs are in the repo
+# pull request action verification
 
 name: OSSAR on-push-verification windows-latest
 on: push
