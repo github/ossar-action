@@ -5,7 +5,8 @@ name: OSSAR ubuntu-latest
 on:
   push:
     branches:
-      - master
+      - main
+      - v1
 
 jobs:
   sample:
