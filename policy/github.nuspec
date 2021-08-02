@@ -5,7 +5,7 @@
     <version>1.1.0</version>
     <description>Microsoft Security Code Analysis Policy for GitHub.</description>
     <authors>Microsoft</authors>
-    <projectUrl>https://aka.ms/mscadocs</projectUrl>
+    <projectUrl>https://aka.ms/msca-nuget</projectUrl>
     <language>en-US</language>
     <license type="expression">MS-PL</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
