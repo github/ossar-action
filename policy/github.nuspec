@@ -3,9 +3,9 @@
   <metadata>
     <id>Microsoft.Security.CodeAnalysis.Policy.GitHub</id>
     <version>1.1.0</version>
-    <description>Microsoft Security Code Analysis Policy for GitHub.</description>
+    <description>Microsoft Security DevOps Policy for GitHub.</description>
     <authors>Microsoft</authors>
-    <projectUrl>https://aka.ms/msca-nuget</projectUrl>
+    <projectUrl>https://aka.ms/msdo-nuget</projectUrl>
     <language>en-US</language>
     <license type="expression">MS-PL</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
