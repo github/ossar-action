@@ -1,9 +1,9 @@
 import * as core from '@actions/core';
-import { MscaClient } from 'msca-actions-toolkit';
+import { MsdoClient } from 'microsoft-security-devops-actions-toolkit';
 import * as path from 'path';
 
 async function run() {
-    let client = new MscaClient();
+    let client = new MsdoClient();
 
     let args: string[] = ['run'];
 
@@ -30,7 +30,9 @@ async function run() {
         args.push(policy);
     }
 
-    await client.run(args);
+    args.push('--github');
+
+    await client.run(args, 'github/ossar-action');
 }
 
 run().catch((error) => core.setFailed(error));
