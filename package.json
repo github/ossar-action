@@ -8,7 +8,7 @@
     "author": "Microsoft Corporation",
     "license": "",
     "dependencies": {
-        "@actions/core": "1.2.6",
+        "@actions/core": "1.9.1",
         "@actions/exec": "1.0.4",
         "microsoft-security-devops-actions-toolkit": "1.3.1"
     },
