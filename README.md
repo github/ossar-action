@@ -48,7 +48,7 @@ steps:
   uses: github/ossar-action@v1
   id: ossar
 - name: Upload results to Security tab
-  uses: github/codeql-action/upload-sarif@v1
+  uses: github/codeql-action/upload-sarif@v2
   with:
     sarif_file: ${{ steps.ossar.outputs.sarifFile }}
 ```
