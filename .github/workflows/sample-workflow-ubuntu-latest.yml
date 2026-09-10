@@ -19,7 +19,7 @@ jobs:
     steps:
 
       # Checkout your code repository to scan
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2.8.0
 
     # Ensure a compatible version of dotnet is installed.
     # The [Microsoft Security DevOps CLI](https://aka.ms/msdo-nuget) is built with net6.0
@@ -38,6 +38,6 @@ jobs:
 
       # Upload results to the Security tab
     - name: Upload results to Security tab
-      uses: github/codeql-action/upload-sarif@v2
+      uses: github/codeql-action/upload-sarif@b8d3b6e8af63cde30bdc382c0bc28114f4346c88 # v2.28.1
       with:
         sarif_file: ${{ steps.ossar.outputs.sarifFile }}
